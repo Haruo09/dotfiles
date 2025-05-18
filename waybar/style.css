@@ -1,8 +1,8 @@
 * {
   border: none;
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "JetBrains Mono Nerd Font";
   font-weight: bold;
-  font-size: 12.5px;
+  font-size: 16.5px;
   min-height: 0;
 }
 
@@ -12,7 +12,7 @@ window#waybar {
   padding: 0px;
   transition-duration: 1s;
   box-shadow: none; 
-  background: transparent;
+  background: rgba(26, 27, 38, 0.75); 
 }
 
 
@@ -25,7 +25,9 @@ tooltip {
 }
 
 #workspaces button {
-  margin-right: 0px;
+  /* margin-right: 0px; */
+  margin: 0;
+  padding: 0 10px;
   color: mix(#c0caf5, #1a1b26, 0.4); /* Slightly lighter Tokyo Night foreground */
   border-radius: 5px;
 }
@@ -43,7 +45,7 @@ tooltip {
 }
 
 #workspaces button:hover {
-  color: #9ece6a; /* Tokyo Night Green */
+  /* color: #9ece6a; */ 
 }
 
 #temperature {
@@ -121,11 +123,11 @@ tooltip {
   color: mix(#ff9e64, #c0caf5, 0.5); /* Tokyo Night Orange */
 }
 
-#pulseaudio.microphone {
+#pulseaudio.microphone, #custom-gpu {
   color: mix(#9ece6a, #c0caf5, 0.5); /* Tokyo Night Green */
 }
 
-#pulseaudio.bluetooth:not(.microphone) {
+#pulseaudio.bluetooth:not(.microphone), #cpu {
   color: mix(#7dcfff, #c0caf5, 0.5); /* Tokyo Night Cyan */
 }
 
@@ -145,7 +147,7 @@ battery.bat2 {
   color: mix(#9ece6a, #c0caf5, 0.5); /* Tokyo Night Green */
 }
 
-#custom-weather {
+#custom-weather, #memory {
   color: mix(#ff9e64, #c0caf5, 0.5); /* Tokyo Night Orange */
 }
 

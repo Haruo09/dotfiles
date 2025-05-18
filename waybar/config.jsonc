@@ -7,17 +7,18 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "mpd"
     ],
     "modules-center": [
         "hyprland/window"
     ],
     "modules-right": [
-        "mpd",
         "pulseaudio",
         "network",
-    //    "power-profiles-daemon",
+        "power-profiles-daemon",
         "cpu",
+        "custom/gpu",
         "memory",
         "temperature",
     //    "backlight",
@@ -29,6 +30,11 @@
         "tray",
         "custom/power"
     ],
+    "custom/gpu": {
+      "format": "{}% 󰍹",
+      "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits",
+      "interval": 2
+    },
     // Modules configuration
     "hyprland/workspaces": {
       "disable-scroll": false,
@@ -37,12 +43,13 @@
       "format": "{name}: {icon}",
       "format-icons": {
         "1": "",
-        "2": "",
+        "2": "󰈹",
         "3": "",
-    //         "4": "",
-        "4": "",
-        // "urgent": "",
-        "active": "",
+        "4": "",
+        "5": "",
+        "6": "",
+        "urgent": "",
+        // "active": "",
         "default": ""
       }
     },
@@ -197,15 +204,15 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/power": {
-        "format" : "⏻ ",
-		"tooltip": false,
-		"menu": "on-click",
-		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-		"menu-actions": {
-			"shutdown": "shutdown",
-			"reboot": "reboot",
-			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
-		}
+      "format" : "⏻ ",
+      "tooltip": false,
+      "menu": "on-click",
+      "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+      "menu-actions": {
+        "shutdown": "shutdown",
+        "reboot": "reboot",
+        "suspend": "systemctl suspend",
+        "hibernate": "systemctl hibernate"
+      }
     }
 }
