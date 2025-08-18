@@ -1,0 +1,31 @@
+# Enable dark theme with recoloring
+# set recolor             true
+set recolor-keephue     true
+
+# Colors inspired by TokyoNight (Night variant)
+set default-bg          "#141520"   # background
+set default-fg          "#c0caf5"   # foreground (text)
+
+# Recolor mode colors
+set recolor-lightcolor  "#1a1b26"
+set recolor-darkcolor   "#c0caf5"
+
+# UI Colors
+set statusbar-fg        "#7aa2f7"
+set statusbar-bg        "#1a1b26"
+set inputbar-bg         "#1a1b26"
+set inputbar-fg         "#c0caf5"
+set completion-bg       "#1a1b26"
+set completion-fg       "#c0caf5"
+set completion-highlight-bg "#7aa2f7"
+set completion-highlight-fg "#1a1b26"
+
+# Fonts (optional)
+set font                "JetBrains Mono 13"
+
+# Enable smooth scrolling and remove scrollbars
+set scroll-step         100
+set show-scrollbars     false
+
+# Enable mouse zoom
+set zoom-center         true
