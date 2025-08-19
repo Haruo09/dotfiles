@@ -2,7 +2,7 @@
   border: none;
   font-family: "JetBrains Mono Nerd Font";
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
   /* font-feature-settings: '"zero", "tnum", "ss01", "ss02", "ss03", "cv01"'; */
   /* animation-timing-function: steps(12); */
   /* animation-duration: 0.3s; */
@@ -175,6 +175,7 @@ tooltip {
 
 #battery {
   color: mix(#9ece6a, #c0caf5, 0.5); /* Tokyo Night Green */
+  border-bottom: 3px solid mix(#9ece6a, #c0caf5, 0.5);
 }
 
 battery.bat2 {
